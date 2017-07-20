@@ -1,13 +1,25 @@
 /* style.css */
+/* Fonts
+---headings
+font-family: 'Montserrat Alternates', sans-serif;
+--paragraphs
+font-family: 'Montserrat', sans-serif; 
+*/
+
 
 /* body container */
+html, body { 
+  padding: 0;
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden
+}
+
 body {
   width: 100%;
   height: 100vh;
+  font-family: 'Montserrat', sans-serif; 
 }
-
-html, body { padding: 0;margin: 0; height: 100%; overflow: hidden}
-
 
 /* first column */
 #map {
@@ -48,33 +60,9 @@ h3 {
   margin: 10px;
   position: relative;
   top: 40px;
-  border-radius: 50%;
+  height: 50%;
 }
 
-
-.healthy-cuisine {
-  border: 4px solid green;
-}
-
-.italian-cuisine {
-  border: 4px solid red;
-}
-
-.greek-cuisine {
-  border: 4px solid blue;
-}
-
-.spanish-cuisine {
-  border: 4px solid yellow;
-}
-
-.american-cuisine {
-  border: 4px solid lightblue;
-  }
-
-.international-cuisine {
-  border: 4px solid violet;
-}
 /* vendors list */
 #vendorList {
   width: 100%;

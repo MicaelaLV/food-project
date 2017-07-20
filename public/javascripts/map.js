@@ -45,7 +45,7 @@ function initMap() {
   }
 
   $.ajax({
-    url: "4",
+    url: "http://localhost:3000/customers/search/json",
     type: "get",
     success: function (response) {
       response.forEach(function (chef, i) {
