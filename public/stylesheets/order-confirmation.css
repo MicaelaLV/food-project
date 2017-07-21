@@ -1,0 +1,43 @@
+/* Fonts
+---headings
+font-family: 'Montserrat Alternates', sans-serif;
+--paragraphs
+font-family: 'Montserrat', sans-serif; 
+*/
+
+
+/* body container */
+html, body { 
+  padding: 0;
+  margin: 0; 
+  height: 100%; 
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.container {
+ 	box-shadow: -1px 1px 8px 4px #ededed;
+  position: fixed;
+  padding: 90px 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #3DB4EA;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif; 
+  text-align: center;
+}
+
+img {
+  position: relative;
+  left: 25%;
+}
