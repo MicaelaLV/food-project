@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Your Dashboard!</title>
-    <link rel='stylesheet' href='/stylesheets/normalize.css' />
-    <link rel='stylesheet' href='/stylesheets/dashboard.css' />
+    <link rel='stylesheet' href='/stylesheets/normalize.css' >
+    <link rel='stylesheet' href='/stylesheets/dashboard.css' >
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
   </head>
@@ -20,28 +20,34 @@
       <div class="main-flex-parent">
         <div class="about main-flex-child">
           <div class="info-box">
-            <p class="bio"><p>
+            <p class="bio"> <%= theVendorFound.about %>  <p>
           </div>
             <a class="new-button" href="addbio">Edit</a>
             <br>
         </div>
-        <div class="orders main-flex-child"> </div>
+        <div class="orders main-flex-child"> 
+          <h2><%= orderPrompt %></h2>
+          <ul>
+            <% theOrdersFound.forEach((element) => { %>
+            <li><%= element._orderedBy %></li>
+            <% }); %>
+          </ul>
+
+        </div>
         <div class="menu main-flex-child">
           <h3 class="black-text">On your menu today:</h3>
           
           <div>
             <a class="new-button" href="newdish">New Dish</a>
           </div>
+<% if(check) { %>
+<h2><%= theVendorFound.dish.dishName %></h2>
+<% } %>
 
-          <ul>
-            <li class="menu-item"></li> 
-            <div class = "edit-item">
-              <a class="new-button" href="editdish">Edit</a>
-            </div>
-            <div class = "edit-item">
-              <a class="new-button" href="deletedish">Delete</a>
-            </div>
-          </ul>
+<% if(!check) { %>
+<h2><%= menuPrompt %></h2>
+<% } %>
+
         </div> 
       </div>
     </div>

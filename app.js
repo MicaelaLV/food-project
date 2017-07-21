@@ -8,10 +8,10 @@ const bcrypt         = require('bcrypt');
 
 //routes connection over here
 const customerAuthRoutes = require("./routes/customer-auth-routes");
-const customers = require('./routes/customers');
-const index = require('./routes/index');
-const vendors = require('./routes/vendors');
-const orders = require('./routes/orders');
+const customers          = require('./routes/customers');
+const index              = require('./routes/index');
+const vendors            = require('./routes/vendors');
+const orders             = require('./routes/orders');
 
 const vendorAuthRoutes = require("./routes/vendor-auth-routes");
 
