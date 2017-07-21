@@ -14,7 +14,7 @@ html, body {
   height: 100%; 
   width: 100%;
   overflow: hidden;
-    font-family: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif; 
 }
 
 /* first column */
@@ -26,14 +26,14 @@ html, body {
 
 /* second column */
 #vendorsMain {
-  width: 48%;
-  height: 100%;
   float: left;
+  height: 100%;
+  margin-top: 40px;
+  width: 48%;
 }
 
 /* first row  */
 .filters {
-  border: 1px solid black;
   width: 95%;
   height: 20%;
   padding: 15px;
@@ -69,11 +69,14 @@ h4 {
 
 /* vendors boxes */
 .vendor-results {
-  width: 95%;
+  border-radius: 1px;
+	background-color: #ffffff;
+	box-shadow: -1px 1px 8px 4px #ededed;
   height: 20%;
-  border: 1px solid black;
-  padding: 40px 15px 15px 15px;
+  margin-left: 2%;
+  padding-bottom: 30px;
   transition: all 200ms ease;
+  width: 95%;
 }
 
 .vendor-results.hidden {
@@ -87,6 +90,8 @@ h4 {
 .vendor-img {
   float: left;
   height: 50%;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
  .vendor-description {
@@ -94,27 +99,39 @@ h4 {
   height: 60%;
   padding: 10px;
   width: 45%;
-  margin: 20px;
+  margin: 30px;
 } 
 
 h5.vendor-name {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 300;
   margin: 0 auto;
+  padding-left: 20%;
 }
 
 .cuisine {
   text-transform: capitalize;
+  padding-left: 20%;
+  padding-top: 20px;
 }
 
-p.dish {
+.dish {
   display: inline-block;
+  padding-left: 20%;
 }
 
-.get-result {
-  border-radius: 4px;
-  color: black;
-  float: left;
-  margin-top: 50px;
+span.dish {
+padding: 0px;
+}
+
+button.get-result {
+  background-color: #3DB4EA;
+  border: 2px solid black;
+  border-radius: 1px;
+  color: white;
+  float: right;
+  font-weight: 400;
+  margin-top: 10%;
+  margin-right: 5%;
   width: 20%;
 }

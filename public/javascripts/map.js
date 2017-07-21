@@ -82,9 +82,9 @@ function initMap() {
         $("#vendorList").append(vendorHtml);
 
         //get the info on click on the page
-        //     google.maps.event.addListener(marker, 'click', function() {
-        //       infoWindow.open(map,marker);
-        // })
+            google.maps.event.addListener(markersArray, 'click', function() {
+              infoWindow.open(map,markersArray);
+        })
       });
     },
     error: function (error) {
