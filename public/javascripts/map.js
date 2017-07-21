@@ -45,7 +45,7 @@ function initMap() {
   }
 
   $.ajax({
-    url: "http://nameless-retreat-97410.herokuapp.com/customers/search/json",
+    url: "/customers/search",
     type: "get",
     success: function (response) {
       response.forEach(function (chef, i) {
