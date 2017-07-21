@@ -48,7 +48,6 @@ function initMap() {
     url: "/customers/search/json",
     type: "get",
     success: function (response) {
-      console.log(response)
       response.forEach(function (chef, i) {
         let position = {
           lat: chef.location.coordinates[1],
@@ -137,3 +136,7 @@ $(document).on('click', '.cuisine-logos', function (evt) {
 
 
 });
+
+$(document).ready(function(){
+  initMap()
+})
