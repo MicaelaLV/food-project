@@ -45,9 +45,10 @@ function initMap() {
   }
 
   $.ajax({
-    url: "/customers/search",
+    url: "/customers/search/json",
     type: "get",
     success: function (response) {
+      console.log(response)
       response.forEach(function (chef, i) {
         let position = {
           lat: chef.location.coordinates[1],
