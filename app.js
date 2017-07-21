@@ -1,3 +1,6 @@
+//heroku mongo dbs requires:
+require(“dotenv”).config();
+
 const express                 = require("express");
 const path                    = require("path");
 const logger         = require("morgan");
@@ -25,7 +28,7 @@ const vendorData     = require('connect-mongo') (session);
 
 // Mongoose configuration
 const mongoose       = require("mongoose");
-mongoose.connect("mongodb://localhost/foodApp");
+mongoose.connect(process.env.MONGODB_URI);
 
 // Middlewares configuration
 app.use(logger("dev"));
