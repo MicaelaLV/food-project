@@ -64,7 +64,7 @@ function initMap() {
 
         let vendorHtml = `
         <form id="marker-${i}" class="vendor-results ${chef.cuisine} row" action="/orders/newOrder" method="POST">
-            <img class="vendor-img" src="../images/healthy.png">
+            <img class="vendor-img" src="../images/${chef.cuisine}.png">
             <div class="vendor-description">
               <h5 class="vendor-name">${chef.name}</h5>
               <h6 class="cuisine">${chef.cuisine}</h6>

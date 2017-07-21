@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="stylesheets/style.css">
-  <title>Customer Login</title>
+<html>
+  <head>
+    <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <title>Homie - Customer Login</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Homie - Homefood at your place without Cooking">
+    <meta name="authors" content="Micaela Linda Villani - Stephanos Theodotou - Matilde Adan Ramirez">
+      
+    <!-- Mobile Specific Metas
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+    <!-- CSS
+     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+     <link rel="stylesheet" href="../stylesheets/skeleton.css">
+     <link rel="stylesheet" href="../stylesheets/normalize.css">
+     <link rel="stylesheet" href="../stylesheets/formstyle.css">
+
+     <!-- FONTS
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300|Work+Sans:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:500|Montserrat:300,400" rel="stylesheet">
+     
+  </head>
 </head>
 
-<body>
-<form id="form" action="/customer-login" method="POST" id="form">
-     
-    <h2> Customer Login</h2>
-    <label for="username">Username</label>
-    <input type="text" name="username" placeholder="mati">
-    <br><br>
-    <label for="password">Password</label>
-    <input type="password" name="password" placeholder="mati">
-    <br><br>
-    <% if (typeof errorMessage !== "undefined") { %>
-        <div class="error-message"><%= errorMessage %></div>
-    <% } %>
-    <button>Log in</button>
+    <body>
+        <form id="form" action="/customer-login" method="POST" id="form">
+            
+            <h2> Customer Login</h2>
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="mati">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="mati">
+            <br><br>
+            <% if (typeof errorMessage !== "undefined") { %>
+                <div class="error-message"><%= errorMessage %></div>
+            <% } %>
+            <button>Log in</button>
 
-    <p class="account-message">
-        Don't have an account? <a href="/customer-signup">Sign up</a>
-    </p>
-</form>
-</body>
+            <p class="account-message">
+                Don't have an account? <a href="/customer-signup">Sign up</a>
+            </p>
+        </form>
+    </body>
 </html>

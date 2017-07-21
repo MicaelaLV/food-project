@@ -1,31 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="stylesheets/style.css">
-  <title>Customer Sign Up</title>
-</head>
-
-<body>
-  <form id="form" action="/customer-signup" method="POST">
+<html>
+  <head>
+    <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <title>Homie - Customer Signup</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Homie - Homefood at your place without Cooking">
+    <meta name="authors" content="Micaela Linda Villani - Stephanos Theodotou - Matilde Adan Ramirez">
       
-    <h2>Customer Signup</h2>
-    <label for="username">Username</label><br>
-    <input type="text" name="username" placeholder="JonSnow">
-   <br><br>
-    <label for="password">Password</label><br>
-    <input type="password" name="password" placeholder="winteriscoming">
-    <br><br>
-    <% if (typeof(errorMessage) != "undefined") { %>
-        <div class="error-message"><%= errorMessage %></div>
-    <% } %>
-    <button>Create account</button>
+    <!-- Mobile Specific Metas
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
-    <p class="account-message">
-        Already have an account? <a href="/customer-login">Log in</a>
-    </p>
-  </form>
-</body>
+    <!-- CSS
+     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+     <link rel="stylesheet" href="../stylesheets/skeleton.css">
+     <link rel="stylesheet" href="../stylesheets/normalize.css">
+     <link rel="stylesheet" href="../stylesheets/formstyle.css">
+
+     <!-- FONTS
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300|Work+Sans:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:500|Montserrat:300,400" rel="stylesheet">
+     
+  </head>
+  <body>
+    <form id="form" action="/customer-signup" method="POST">
+        
+      <h2>Customer Signup</h2>
+      <label for="username">Username</label><br>
+      <input type="text" name="username" placeholder="JonSnow">
+      <br><br>
+      <label for="password">Password</label><br>
+      <input type="password" name="password" placeholder="winteriscoming">
+      <br><br>
+      <% if (typeof(errorMessage) != "undefined") { %>
+          <div class="error-message"><%= errorMessage %></div>
+      <% } %>
+      <button>Create account</button>
+
+      <p class="account-message">
+          Already have an account? <a href="/customer-login">Log in</a>
+      </p>
+    </form>
+  </body>
 </html>
