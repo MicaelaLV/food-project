@@ -1,3 +1,10 @@
+/*
+Name: Food App
+Description: Index Landing Page Styling
+Authors: Micaela Linda Villani & Stephanos Theodotou & Matilde Adan Ramirez
+Tags: Full Stack Javascript App
+*/
+
 /* Fonts
 ---headings
 font-family: 'Montserrat Alternates', sans-serif;
@@ -40,4 +47,30 @@ p {
 img {
   position: relative;
   left: 25%;
+}
+
+button.homie-home{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2%;
+    position: absolute;
+    top: 85%;
+    right: 40%;
+    background: white;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+button.homie-home{
+   text-decoration: none;
+}
+
+
+button.homie-home:hover {
+    border: 3px solid #fb8b2c;
+}
+
+button.homie-home:hover a {
+    color: #fb8b2c;
+    text-decoration: none;
+
 }

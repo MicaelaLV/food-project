@@ -1,3 +1,17 @@
+/*
+Name: Food App
+Description: Index Landing Page Styling
+Authors: Micaela Linda Villani & Stephanos Theodotou & Matilde Adan Ramirez
+Tags: Full Stack Javascript App
+*/
+
+/* Fonts
+---headings
+font-family: 'Montserrat Alternates', sans-serif;
+--paragraphs
+font-family: 'Montserrat', sans-serif; 
+*/
+
 a{
   text-decoration: none;
 }
@@ -13,14 +27,14 @@ ul, li{
 .wrapper{
   padding-left: 2%;
   padding-right: 2%;
-  font-family: "Lato", sans-serif;
+  font-family: 'Montserrat', sans-serif; 
 
 
 }
 
 .navbar{
   font-size: 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: 'Montserrat', sans-serif; 
   padding: 10px 24px;
 }
 

@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="stylesheets/style.css">
-  <title>Vendor Sign Up</title>
-</head>
+<html>
+  <head>
+    <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <title>Homie - Chefs Signup</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Homie - Homefood at your place without Cooking">
+    <meta name="authors" content="Micaela Linda Villani - Stephanos Theodotou - Matilde Adan Ramirez">
+      
+    <!-- Mobile Specific Metas
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+    <!-- CSS
+     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+     <link rel="stylesheet" href="../stylesheets/skeleton.css">
+     <link rel="stylesheet" href="../stylesheets/normalize.css">
+     <link rel="stylesheet" href="../stylesheets/formstyle.css">
+43
+     <!-- FONTS
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300|Work+Sans:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:500|Montserrat:300,400" rel="stylesheet">
+     
+  </head>
 
 <body>
   <form id="form" action="/vendor-signup" method="POST">
@@ -14,15 +32,15 @@
     <h2>Vendor Signup</h2>
     <!-- username -->
     <label for="email">E-mail</label><br>
-    <input type="text" name="email" placeholder="grandmas@food.com">
+    <input type="text" name="email" placeholder="email">
     <br><br>
     <!-- password -->
     <label for="password">Password</label><br>
-    <input type="password" name="password" placeholder="grandma">
+    <input type="password" name="password" placeholder="password">
     <br><br>
     <!-- name -->
     <label for="name">Name</label><br>
-    <input type="text" name="name" placeholder="atgrandmas">
+    <input type="text" name="name" placeholder="chef name">
     <br><br>
     <!-- location  -->
     <div id="locationField">
@@ -55,11 +73,11 @@
     </table>
     <!-- cuisine -->
     <label for="cuisine">Cuisine</label><br>
-    <input type="text" name="cuisine" placeholder="greek">
+    <input type="text" name="cuisine" placeholder="cuisine">
     <br><br>
      <!-- capacity -->
     <label for="capacity">Capacity</label><br>
-    <input type="text" name="capacity" placeholder="10">
+    <input type="text" name="capacity" placeholder="maximum capacity">
     <br><br>
     <!-- hidden lat long -->
     <input type="hidden" name="latitude" placeholder="..." id="latitude">
