@@ -2,19 +2,19 @@
 Name: Food App
 Description: Index Landing Page Styling
 Authors: Micaela Linda Villani & Stephanos Theodotou & Matilde Adan Ramirez
-Authors URI:
-Tags: 
+Tags: Full Stack Javascript App
 */
 
-/* Fonts Used 
-font-family: 'Nunito', sans-serif;
-font-family: 'Work Sans', sans-serif;
+/* Fonts
+---headings
+font-family: 'Montserrat Alternates', sans-serif;
+--paragraphs
+font-family: 'Montserrat', sans-serif; 
 */
 
 html, body { 
     padding: 0;
     margin: 0; 
-    height: 100%; 
     overflow: hidden;
 }
 
@@ -22,61 +22,143 @@ html, body {
     box-sizing: border-box;
 }
 
-body {
-    background: url('');
-    height: 100vh;
-    width: 100vw;
+@media (min-width: 550px) {
+  .container {
+    width: 100%; }
+  .column,
+  .columns {
+    margin-left: 0%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
 }
 
-.nav-bar {
-    height: 50px;
-    margin-top: 0 auto;
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/background.png')no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body > .container {
+    max-width: 100%;
+    margin: 0;
+}
+
+/* navigation */
+nav.row {
+    width: 100vw;
+    height: 10vh;
+}
+
+nav .logo {
+    height: 80px;
+}
+
+nav .login-btn.nav {
+    margin-right: 2em;
+    width: 130px;
+    padding: 0;
+}
+
+nav h1.nav {
+    position: absolute;
+    left: 6em;
 }
 
 h1 {
-    font-family: 'Work Sans', sans-serif;
-    width: 300px;
-    height: 100px;
+    float: left;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: white;
-    margin-right: 40px;
-    margin-top: 50px;
     font-size: 40px;
 }
 
-button {
+.login-btn{
+    float: right;
+    font-family: 'Montserrat', sans-serif; 
+    margin-top: 2%;
+    background: white;
     border: 2px solid white;
-    border-radius: 4px;
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    font-size: 24px;
-    height: 60px;
-    margin-left: 60%;
-    margin-top: 50px;
-    width: 250px;
+    border-radius: 2px;
 }
 
+button.login-btn:hover {
+    border: 3px solid #fb8b2c;
+}
+
+button.login-btn:hover a {
+    color: #fb8b2c;
+}
+
+
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 button:hover {
-    border: 2px solid #98D55A;
+    border: 2px solid #011D35;
+    color: #011D35;
 }
 
-a:hover {
-    color: #98D55A;
-    text-decoration: underline #98D55A;
+/* landing */
+.landing.row {
+    margin-top: 20%;
 }
 
-
-.first-section {
+.landing-section {
     color: white;
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
-    margin-top: 150px;
+    font-size: 3rem;
 }
 
-.cloud {
-    margin-left: 55%;
+/* main image section */
+
+div.main-img {
+    width: 100vw;
+    height: 90vh;
+    background: url('../images/homie-kitchen-night.png')no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    background-size: 100vw 100vh;
+    margin: 0;
+    background-position: 0 -95px;
 }
+
+button.order-now {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    height: 60px;
+    border: 3px solid transparent
+}
+
+button.order-now:hover {
+    border: 3px solid #fb8b2c;
+}
+
+button.order-now:hover a {
+    color: #fb8b2c;
+}
+
+
+
+/* customers section  */
+
+/* 
+.customers.row {
+    width: 100vw;
+}
+.customers {
+    float: right;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.customers-description {
+    text-align: right;
+    color: white;
+    font-size: 3rem;
+} 
+*/
