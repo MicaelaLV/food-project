@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/foodApp");
+mongoose.connect(process.env.MONGODB_URI);
 const Vendor  = require("../models/vendor");
 const Dish = require("../models/vendor");
 
