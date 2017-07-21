@@ -64,12 +64,12 @@ function initMap() {
 
         let vendorHtml = `
         <form id="marker-${i}" class="vendor-results ${chef.cuisine} row" action="/orders/newOrder" method="POST">
-            <div class="vendor-img"> </div>
+            <img class="vendor-img" src="../images/healthy.png">
             <div class="vendor-description">
               <h5 class="vendor-name">${chef.name}</h5>
-              <p class="cuisine">${chef.cuisine}</p>
+              <h6 class="cuisine">${chef.cuisine}</h6>
               <p class="dish">${chef.dish.dishName}</p> 
-              <p class="dish">${chef.dish.dishPrice}</p> 
+              <span class="dish">${chef.dish.dishPrice} &euro;</span> 
 
             </div>
             <input type="hidden" name="chefId" value="${chef._id}">
