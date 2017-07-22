@@ -6,7 +6,7 @@ Full Stack Javascript Application, pair programmed with Stephanos Theodotou whil
 
                             # Why not make good, home prepared food available to everyone?
 
-We could improve small household's economy and give everyone a chance to eat at home without the preparation and time involved.
+We could improve small household's economy and give everyone a chance to eat at home without the preparation and the time required.
 
 Homie is a full stack javascript web application built in under 4 days, with all the mandatory features required. 
 
@@ -17,10 +17,10 @@ Homie is a full stack javascript web application built in under 4 days, with all
 - EXPRESS.JS
 - PASSPORT.JS
 - NPM MODULES
-- BOWER
+- BOWER COMPONENTS
 - AJAX CALLS
 - JSON 
-- GOOGLE MAPS WEB APIS  
+- GOOGLE MAPS WEB API  
 - MONGODB & MONGOOSE
 - DEPLOYMENT WITH GITHUB AND HEROKU (WITH MONGOLABS)
 
@@ -41,23 +41,20 @@ The first thing we did was writing down all the feautures we wanted to build. Th
 
 Back end has been our biggest focus since we started studying it two weeks ago and this was our first complete exercise. 
 
-We then moved into the styling and the front end, in the last hours before the release: Frisay 21st of July 2017.
+We then moved into the styling and the front end, in the last hours before the release: Friday 21st of July 2017.
 
 ## Features Built
 
-- Database infrastructure with MongoDB & Mongoose 
+- Database with MongoDB & Mongoose 
 - Express.js views, templates and ejs files
 - Users authorization and authentication with bcrypt in Node.js environment
 - Bower components and Npm modules
 - Ajax calls & CRUD operations
-- Google Maps APi with database interactions
-
-## Unsolved problems
-
-- [ ] 
-
+- Google Maps API with database interactions
 
 ## Future implementations
 
-- [ ] Chef public profiles
-- [ ]
+- [ ] Chef public profile with the chance to choose from an available menu and 
+- [ ] Get an order confirmation recap
+- [ ] Improve styles in landing page, signup, login
+- [ ] User Profile with last orders, and info recap
