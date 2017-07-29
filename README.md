@@ -58,4 +58,4 @@ We then moved into the styling and the front end, in the last hours before the r
 - [ ] Chef public profile with the chance to choose from an available menu 
 - [ ] Get an order confirmation recap
 - [ ] Improve styles in landing page, signup, login
-- [ ] User Profile with last orders, info recap, and extend Profile for Users in sign up 
+- [ ] User Profile with last orders, info recap, and extend Profile for Users on sign up 
