@@ -54,7 +54,8 @@ We then moved into the styling and the front end, in the last hours before the r
 
 ## Future implementations
 
-- [ ] Chef public profile with the chance to choose from an available menu and 
+- [ ] Implement error messages with flash errors
+- [ ] Chef public profile with the chance to choose from an available menu 
 - [ ] Get an order confirmation recap
 - [ ] Improve styles in landing page, signup, login
-- [ ] User Profile with last orders, and info recap
+- [ ] User Profile with last orders, info recap, and extend Profile for Users in sign up 
