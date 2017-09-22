@@ -1,0 +1,30 @@
+
+
+// any request to /weather/....
+
+app.get(/^\/weather\/(.+)/, function(req, res) {
+
+  var domain = weatherDomain;
+  var path = '/' + apikey + '/' + req.params[0];
+  console.log(domain, path);
+  res.json({});
+
+  var options = {
+      hostname: '127.0.0.1',
+      port: app.get('port'),
+      path: '/users',
+      method: 'POST',
+      json: {"name":"John", "lastname":"Doe"}
+  }
+  request(options, function(error, response, body){
+
+    console.log(body)
+
+      if(error) // next error
+      else
+      data = JSON.parse(body)
+      res.json(data)
+      res.send(body)
+  });
+
+})

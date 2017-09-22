@@ -13,8 +13,8 @@ const initialVendorData = [{
         cuisine   : "spanish",
         capacity  : 20,
         dish      : {
-                     dishName    : "Paella",
-                     dishQuantity : 20,
+                     dishName      : "Paella",
+                     dishQuantity  : 20,
                      dishPrice     : 9,   
                     }
                
